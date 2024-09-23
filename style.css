@@ -2216,6 +2216,16 @@ margin-left: 30px;
 #tictacbtn14{
   background-color:#282c33 ;
 }
+#offCanvasMenu{
+  background-color:#282c33 ;
+  color: white;
+}
+#hamburgerMenu{
+  .line{
+    background-color: white;
+  }
+}
+
 }
 .bodycolor{
   background-color:#1e2229;
@@ -2223,6 +2233,8 @@ margin-left: 30px;
   a{
     color: white;
   }
+  
+  
 }
 .rightpanel{
   justify-content: center;
@@ -2246,6 +2258,7 @@ margin-left: 30px;
   hr{
     margin-top: 10px;
   }
+  
  font-size: 16px;
 }
 #box6{
@@ -2755,8 +2768,298 @@ p{
     margin-top: -220px;
   }
 }
+
 /* Kichik ekranlar (telefonlar, <600px) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .container{
+    max-width: 600px;
+
+  }
+  body{
+    width: 600px;
+  }
+  .box1{
+    width: 600px;
+  }
+  header{
+    margin-top: 20px;
+    #hamburgerMenu{
+      display: block;
+      margin-left: 150px;
+      .line{
+        width: 40px;
+        line-height: 10px;
+        margin-top: -3px;
+      }
+    }
+    #offCanvasMenu{
+      #rec{
+        font-size: 14px;
+        display: flex;
+        margin-top: -14px;
+      }
+      strong{
+        font-size: 12px;
+      }
+      display: block;
+      font-size: 14px;
+      width: 100px;
+      line-height: 30px;
+    }
+    img{
+      position: absolute;
+      margin-top: -56px;
+      margin-left: -200px;
+     
+    }
+    #night{
+      margin-left: 30px;
+    }
+  #selink2,#selink3,#selink4{
+   
+    font-size: 13px;
+
+    margin-left: 10px;
+  }
+  }
+  .rightpanel{
+    display: none;
+  }
+  .box1{
+   /* Elementlarni o'rab olish uchun */
+    gap: 10px; /* Elementlar orasidagi bo'shliq */
+   margin-left: 40px;
+  }
+  .box2{
+    #mediabas{
+     
+margin-top: -100px;
+    }
+    #mediascr{
+      margin-top: -100px;
+    }
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .box3{
+    #mediav3{
+   
+      margin-top: -260px;
+      margin-left: 240px;
+    }
+    #mediabox3{
+      margin-top: -40px;
+      margin-left: -40px;
+    }
+    #media2box3{
+      margin-top: -40px;
+      margin-left: 170px;
+    }
+    #media3box3{
+      margin-top: 180px;
+      margin-left: -100px;
+    }
+    
+      
+      #antique6{
+        margin-top: 180px;
+        margin-left: 60px;
+      }
+    
+    div{
+      position: absolute;
+      
+    }
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .sportbox1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .carbox1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .twoplayerbox1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .fighterbox1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .memorybox1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  .box4{
+  
+    div{
+      
+      margin-top: -100px;
+      
+    }
+    #antique8{
+      position: absolute;
+      margin-top:440px;
+      
+    }
+    #media2box4{
+      position: absolute;
+      margin-top: 440px;
+      left: 280px;
+    }
+    #media3box4{
+      position: absolute;
+      margin-top: 660px;
+      margin-left: 100px;
+    }
+    #media4box4{
+      position: absolute;
+      margin-top: 660px;
+      margin-left: 340px;
+     
+    }
+    #media5box4{
+      margin-top: 880px;
+      margin-left: 100px;
+    }
+    #media6box4{
+      margin-top: -600px;
+      margin-left: 250px;
+    }
+    #media7box4{
+
+      margin-top: 60px;
+      margin-left: -30px;
+    }
+    #media8box4{
+      margin-top: -100px;
+      margin-left: 340px
+    }
+    #media9box4{
+      margin-top: 120px;
+      margin-left: 100px;
+    }
+    #media10box4{
+        margin-top: -100px;
+        margin-left: 340px;
+    }
+    
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  }
+ 
+ 
+  footer{
+    margin-left: -50px;
+    width: 580px;
+    .footer1{
+      h2{
+        font-size: 14px;
+      }
+      margin-left: 20px;
+      p{
+        width: 150px;
+        font-size: 12px;
+        margin-top: -20px;
+      }
+      svg{
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      button{
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      
+    }
+    .footer2{
+      font-size: 10px;
+      
+      margin-left: 50px;
+h2{
+font-size: 14px;
+}
+.info{
+
+  p{
+  width: 100px;
+  font-size: 12px;
+ 
+  
+}
+
+
+}
+    }
+    .footer3{
+    
+    margin-left: 250px;
+      h2{
+        font-size: 14px;
+        margin-left: -160px;
+      }
+      i{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: -100px;
+      }
+      p{
+        width: 150px;
+        font-size: 14px;
+        margin-left: -160px;
+      }
+      button{
+        width: 100px;
+        height: 30px;
+        margin-left: -170px;
+        margin-top: 50px;
+        position: absolute;
+      }
+      .fa-youtube{
+        margin-left: -100px;
+      }
+    }
+  }
   
 }
 .icon{
@@ -2770,4 +3073,138 @@ p{
   .info{
     margin-top: 30px;
   }
+}
+article {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+}
+ul li a {
+  color: white;
+}
+ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+ul li ul {
+  padding-left: 1rem;
+}
+#main {
+  position: relative;
+  
+}
+#main:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  
+}
+.is-expanded #main:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 1040;
+}
+.is-expanded #main:after:hover {
+  cursor: pointer;
+}
+.off-canvas-menu {
+  width: 150px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  overflow-y: auto;
+  background: #f2ad00;
+  padding: 15px;
+  color: white;
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1045;
+}
+.is-expanded .off-canvas-menu {
+  transform: translateX(300px);
+  transform: translate3d(300px, 0, 0);
+}
+
+.hamburger {
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin-top: 3px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #121212;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+.is-expanded .hamburger .line:nth-child(2) {
+  opacity: 0;
+}
+.is-expanded .hamburger .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+.is-expanded .hamburger .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+#hamburgerMenu{
+  .line{
+    background-color: #000000;
+  }
+  margin-left: 160px;
+  color: wheat;
+  display: none;
+ 
+  
+}
+#offCanvasMenu{
+  justify-content: center;
+  color: white;
+  text-align: left;
+  padding:  10px;
+ 
+  a{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  a:hover{
+    color: black;
+  }
+  .fa-fire{
+    margin-right: 3px;
+  }
+  .fa-list{
+    margin-right: 3px;
+  }
+  i{ margin-right:3px;
+  }
+  hr{
+    margin-top: 10px;
+  }
+  strong:hover{
+    color: black;
+    cursor: pointer;
+  }
+ font-size: 16px;
+ display: none;
 }
