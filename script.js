@@ -2,7 +2,7 @@ let sport=document.getElementById("Sport")
 sport.addEventListener("click", function(){
   
  document.getElementById("sport").style.display="block"
- document.body.classList.toggle("sportjs");
+ document.body.classList.toggle("sportjs"); 
  
 })
 let night=document.querySelector('#night')
