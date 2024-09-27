@@ -5,6 +5,14 @@ sport.addEventListener("click", function(){
  document.body.classList.toggle("sportjs"); 
  
 })
+let sport2=document.getElementById("Sport2")
+sport2.addEventListener("click", function(){
+  
+ document.getElementById("sport2").style.display="block"
+ document.body.classList.toggle("sportjs"); 
+ 
+})
+
 let night=document.querySelector('#night')
 let body2=document.body
 night.addEventListener("click",()=>{

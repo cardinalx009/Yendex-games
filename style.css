@@ -3208,3 +3208,80 @@ ul li ul {
  font-size: 16px;
  display: none;
 }
+
+#box7{
+  margin-top: 230px;
+  display: flex;
+  margin-left: -1250px;
+  #antique15{
+    background-image: url(images/img/nobrakes.png);
+    background-size: cover;
+    background-position-x: -80px;
+  }
+  button{
+    margin-top: 26px;
+  }
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px)
+  }
+  #antique16{
+    background-image: url(images/img/soccerran.jpg);
+    background-position-x: -60px;
+  }
+  #antique17{
+    background-image: url(images/img/chess.jpg);
+    p{color: #000000;
+      font-size: 24px;
+    transform: translateZ(40px);
+  position: absolute;}
+    span{
+      color: white;
+    }
+  }
+  #antique20{
+    background-image: url(images/img/backrooms.jpg);
+    font-size: 24px;
+  }
+  #antique21{
+    background-image: url(images/img/boxing.png); 
+    p{
+      color: white;
+      span{
+        color: blue;
+      }
+    }
+  }
+}
+.rightpanel{
+  margin-top: -1130px;
+}
+.car{
+  #antique15{
+    background-image: url(images/img/nobrakes.png);
+    background-size: cover;
+    background-position-x: -80px;
+    margin-left: -60px;
+    button{
+      margin-top: 30px;
+    }
+  }
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px);
+margin-top: 20px;  }
+}
