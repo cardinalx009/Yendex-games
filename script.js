@@ -24,7 +24,10 @@ let car=document.getElementById("car")
 car.addEventListener("click", function(){
   document.body.classList.toggle("carjs");
 })
-
+let car2=document.getElementById("car2")
+car.addEventListener("click", function(){
+  document.body.classList.toggle("carjs");
+})
 let two=document.getElementById("two")
 two.addEventListener("click", function(){
   document.body.classList.toggle("twojs");

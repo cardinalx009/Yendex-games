@@ -2770,7 +2770,7 @@ p{
 }
 
 /* Kichik ekranlar (telefonlar, <600px) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .container{
     max-width: 600px;
 
@@ -2814,6 +2814,11 @@ p{
     }
     #night{
       margin-left: 30px;
+    }
+    
+    *{
+      padding: 0px;
+      margin: 0px;
     }
   #selink2,#selink3,#selink4{
    
@@ -2896,6 +2901,14 @@ margin-top: -100px;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  [a17]{
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  #antique15{
+    position: absolute;
+    margin-top: 20px;
+  }
   }
   .twoplayerbox1{
     margin-top: 20px;
@@ -2983,9 +2996,59 @@ margin-top: -100px;
   box-sizing: border-box;
 
   }
- 
+ #box6{
+#box7{
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+margin-left: 200px;
+
+#box7media1{
+ display: block;
+ position: absolute;
+  margin-top: -360px;
+  margin-left: -210px;
+  .new{
+    margin-top:20px;
+  }
+}
+#box7media2{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -10px;
+  .new{
+    margin-top:20px;
+  }
+  
+ }
+ #box7media3{
+  display: none;
+  .new{
+    margin-top:20px;
+  }
+ }
+ #box7media5{
+  margin-top: -100px;
+  margin-left: 120px;
+  .new{
+    margin-top:20px;
+  }
+ }
+ #box7media4{
+  margin-top: 320px;
+  margin-left: -120px;
+  .new{
+    margin-top:20px;
+  }
+ }
+}
+ }
  
   footer{
+   
     margin-left: -50px;
     width: 580px;
     .footer1{
@@ -3060,7 +3123,9 @@ font-size: 14px;
       }
     }
   }
-  
+  #mediatext{
+    margin-top: 10px;
+    }
 }
 .icon{
   margin-top: 100px;
@@ -3284,4 +3349,124 @@ ul li ul {
  margin-left: 100px;
  transform: translateZ(40px);
 margin-top: 20px;  }
+}
+.sportbox2{
+  margin-top: 30px;
+  #antique16{
+    background-image: url(images/img/soccerran.jpg);
+    background-position-x: -60px;
+    .new{
+      color: white;
+      width: 70px;
+      height: 25px;
+      background-color: red;
+    font-size: 16px;
+   border-radius: 10px;
+   border-bottom-right-radius: 0.1px;
+   margin-left: 100px;
+   transform: translateZ(40px);
+  margin-top: 20px;  }
+  button{
+    margin-top: -20px;
+  }
+  }
+  margin-left:-40px;
+}
+.sportjs{
+  .rightpanel{
+    margin-top: -430px;
+  }
+}
+.memorybox1{
+  #antique17{
+   width: 200px;
+   height: 200px;
+    background-image: url(images/img/chess.jpg);
+    margin-top: -200px;
+    p{color: #000000;
+      font-size: 24px;
+    transform: translateZ(40px);
+  position: absolute;}
+  button{
+    height:25px;
+    color: white;
+  }
+    span{
+      color: white;
+    }
+    
+    .new{
+      color: white;
+      width: 70px;
+      height: 25px;
+      background-color: red;
+    font-size: 16px;
+   border-radius: 10px;
+   border-bottom-right-radius: 0.1px;
+   margin-left: 100px;
+   transform: translateZ(40px);
+  margin-top: 20px;  }
+  
+  }
+  
+ 
+}
+.twojs{
+  #antique16{
+    background-image: url(images/img/soccerran.jpg);
+    background-position-x: -60px;
+    button{
+      color: white;
+      margin-top: -10px;
+    }
+  }
+  #antique21{
+    background-image: url(images/img/boxing.png);
+    button{
+      color: white;
+      margin-top: -10px;
+    }
+  }
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px);
+margin-top: 20px;  }
+}
+.memoryjs{
+  #box7media3{
+    margin-top: 200px;
+    margin-left: -20px;
+  }
+}
+.survivaljs{
+  #antique20{
+    background-image: url(images/img/backrooms.jpg);
+    font-size: 24px;
+    margin-left: 40px;
+
+     
+    button{
+      margin-top: -20px;
+      color: white;
+  }
+}
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px);
+margin-top: 20px;  }
+
 }
