@@ -1,18 +1,3 @@
-let sport=document.getElementById("Sport")
-sport.addEventListener("click", function(){
-  
- document.getElementById("sport").style.display="block"
- document.body.classList.toggle("sportjs"); 
- 
-})
-let sport2=document.getElementById("Sport2")
-sport2.addEventListener("click", function(){
-  
- document.getElementById("sport2").style.display="block"
- document.body.classList.toggle("sportjs"); 
- 
-})
-
 let night=document.querySelector('#night')
 let body2=document.body
 night.addEventListener("click",()=>{
@@ -20,14 +5,21 @@ night.addEventListener("click",()=>{
     document.body.classList.toggle("show");
   
 });
+
+let sport=document.getElementById("Sport")
+sport.addEventListener("click", function(){
+  
+ document.getElementById("sport").style.display="block"
+ document.body.classList.toggle("sportjs"); 
+ 
+})
+
+
 let car=document.getElementById("car")
 car.addEventListener("click", function(){
   document.body.classList.toggle("carjs");
 })
-let car2=document.getElementById("car2")
-car.addEventListener("click", function(){
-  document.body.classList.toggle("carjs");
-})
+
 let two=document.getElementById("two")
 two.addEventListener("click", function(){
   document.body.classList.toggle("twojs");

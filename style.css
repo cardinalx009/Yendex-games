@@ -2586,7 +2586,7 @@ p{
     display: none;
   }
   .rightpanel{
-    margin-top: -200px;
+    margin-top: -100px;
   }
 }
 .rightpanel{
@@ -2600,7 +2600,7 @@ p{
   margin-left: 100px;
 }
 .carjs{
-  .box2,.box3,.box4,.box5,.box6,.sportbox1,.twoplayer,.memory,.survival,.girls,.fighter{
+  .box2,.box3,.box4,.box5,.box6,.sportbox1,.twoplayer,.memory,.survival,.girls,.fighter,.sportbox2{
     display: none;
   }
   .car{
@@ -2655,7 +2655,7 @@ p{
 }
 .twojs{
   
-    .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,survival,.girls,.fighter{
+    .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,survival,.girls,.fighter,.sportbox2{
       display: none;
     }
     .twoplayer{
@@ -2693,7 +2693,7 @@ p{
 
 }
 .memoryjs{
-  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.twoplayer,survival,.girls,.fighter{
+  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.twoplayer,survival,.girls,.fighter,.sportbox2{
     display: none;
   }
   .memory{
@@ -2711,7 +2711,7 @@ p{
   display:flex ;
 }
 .survivaljs{
-  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.girls,.fighter{
+  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.girls,.fighter,.sportbox2{
     display: none;
   }
   .survival{
@@ -2734,7 +2734,7 @@ p{
   }
 }
 .girlsjs{
-  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.survival,.fighter{
+  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.survival,.fighter,.sportbox2{
     display: none;
   }
   .girls{
@@ -2758,7 +2758,7 @@ p{
   }
 }
 .fighterjs{
-  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.survival,.girls{
+  .box2,.box3,.box4,.box5,.box6,.sportbox1,.car,.memory,.twoplayer,.survival,.girls,.sportbox2{
     display: none;
   }
   .fighter{
