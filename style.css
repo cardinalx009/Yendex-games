@@ -3122,6 +3122,16 @@ font-size: 14px;
         margin-left: -100px;
       }
     }
+
+  }
+  header{
+    margin-left: 100px;
+    img{
+      margin-left: -100px;
+    }
+    a{
+      margin-left: 20px;
+    }
   }
   #mediatext{
     margin-top: 10px;

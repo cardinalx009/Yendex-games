@@ -51,59 +51,11 @@ fighter.addEventListener("click", function(){
   document.body.classList.toggle("fighterjs");
   
 })
-const hamburgerMenu = document.getElementById("hamburgerMenu");
-const mainContent = document.getElementById("main");
-const offCanvasMenu = document.getElementById("off-canvas-menu");
 
-hamburgerMenu.addEventListener("click", () => {
-  toggleNav();
-}, false);
 
-mainContent.addEventListener("click", (e) => {
-  if (e.target != offCanvasMenu || e.target == hamburgerMenu) {
-    document.body.classList.remove("is-expanded");
-  }
-}, true);
 
-function toggleNav() {
-  if (document.body.classList.contains("is-expanded")) {
-    document.body.classList.remove("is-expanded");
-  } else {
-    document.body.classList.add("is-expanded");
-  }
-}
-jQuery(function ($) {
     
-	$(".sidebar-dropdown > a").click(function() {
-	  $(".sidebar-submenu").slideUp(200);
-	  if (
-		$(this)
-		  .parent()
-		  .hasClass("active")
-	  ) {
-		$(".sidebar-dropdown").removeClass("active");
-		$(this)
-		  .parent()
-		  .removeClass("active");
-	  } else {
-		$(".sidebar-dropdown").removeClass("active");
-		$(this)
-		  .next(".sidebar-submenu")
-		  .slideDown(200);
-		$(this)
-		  .parent()
-		  .addClass("active");
-	  }
-	});
-
-	$("#close-sidebar").click(function() {
-	  $(".page-wrapper").removeClass("toggled");
-	});
-	$("#show-sidebar").click(function() {
-	  $(".page-wrapper").addClass("toggled");
-	});
-
-  });
+	
 
 $(document).on('ready', function() {
   
