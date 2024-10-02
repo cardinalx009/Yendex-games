@@ -2971,7 +2971,7 @@ margin-top: -100px;
       margin-left: 250px;
     }
     #media7box4{
-
+`
       margin-top: 60px;
       margin-left: -30px;
     }
@@ -3025,13 +3025,14 @@ margin-left: 200px;
   
  }
  #box7media3{
-  display: none;
+ margin-top: 550px;
+ margin-left: -120px;
   .new{
     margin-top:20px;
   }
  }
  #box7media5{
-  margin-top: -100px;
+  margin-top: -330px;
   margin-left: 120px;
   .new{
     margin-top:20px;
@@ -3039,12 +3040,13 @@ margin-left: 200px;
  }
  #box7media4{
   margin-top: 320px;
-  margin-left: -120px;
+  margin-left: -230px;
   .new{
     margin-top:20px;
   }
  }
 }
+
  }
  
   footer{
@@ -3134,7 +3136,7 @@ font-size: 14px;
     }
   }
   #mediatext{
-    margin-top: 10px;
+    margin-top: 200px;
     }
 }
 .icon{
