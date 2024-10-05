@@ -2772,8 +2772,8 @@ p{
 /* Kichik ekranlar (telefonlar, <600px) */
 @media only screen and (max-width: 600px) {
   .container{
-    max-width: 600px;
-
+    
+max-width: 600px;
   }
   body{
     width: 600px;
@@ -2816,9 +2816,7 @@ p{
       margin-left: 30px;
     }
     
-    *{
-      padding: 0px;
-      margin: 0px;
+   
     }
   #selink2,#selink3,#selink4{
    
@@ -2826,7 +2824,7 @@ p{
 
     margin-left: 10px;
   }
-  }
+  
   .rightpanel{
     display: none;
   }
@@ -2843,6 +2841,7 @@ margin-top: -100px;
     #mediascr{
       margin-top: -100px;
     }
+
     margin-top: 20px;
     flex-wrap: wrap;
     flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
@@ -2971,34 +2970,31 @@ margin-top: -100px;
       margin-left: 250px;
     }
     #media7box4{
-`
       margin-top: 60px;
       margin-left: -30px;
     }
     #media8box4{
-      margin-top: -100px;
-      margin-left: 340px
+      margin-top: 80px;
+      margin-left: -480px
     }
     #media9box4{
-      margin-top: 120px;
-      margin-left: 100px;
+      margin-top: 300px;
+      margin-left: -230px;
     }
     #media10box4{
-        margin-top: -100px;
-        margin-left: 340px;
+        margin-top: 300px;
+        margin-left: 20px;
     }
     
-    margin-top: 20px;
-    flex-wrap: wrap;
-    flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
+    
 
   }
+  
  #box6{
 #box7{
-  margin-top: 20px;
+  position: absolute;
+  margin-top: 420px;
+  margin-left: -100px;
   flex-wrap: wrap;
   flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
 text-align: center;
@@ -3047,6 +3043,57 @@ margin-left: 200px;
  }
 }
 
+ }
+ #box8{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: -100px;
+  flex-wrap: wrap;
+  flex: 1 1 calc(50% - 10px); /* Har bir box eni containerning yarmini oladi */
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+margin-left: 200px;
+
+#box7media1{
+ display: block;
+ position: absolute;
+  margin-top: 120px;
+  margin-left: 40px;
+  .new{
+    margin-top:20px;
+  }
+}
+#box7media2{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -10px;
+  .new{
+    margin-top:20px;
+  }
+  
+ }
+ #box7media3{
+ margin-top: 550px;
+ margin-left: -120px;
+  .new{
+    margin-top:20px;
+  }
+ }
+ #box7media5{
+  margin-top: -330px;
+  margin-left: 120px;
+  .new{
+    margin-top:20px;
+  }
+ }
+ #box7media4{
+  margin-top: 320px;
+  margin-left: -230px;
+  .new{
+    margin-top:20px;
+  }
+ }
  }
  
   footer{
@@ -3136,9 +3183,9 @@ font-size: 14px;
     }
   }
   #mediatext{
-    margin-top: 200px;
+    margin-top: 1200px;
     }
-}
+  
 .icon{
   margin-top: 100px;
 }
@@ -3150,7 +3197,7 @@ font-size: 14px;
   .info{
     margin-top: 30px;
   }
-}
+}} 
 article {
   max-width: 500px;
   margin: auto;
@@ -3481,4 +3528,101 @@ margin-top: 20px;  }
  transform: translateZ(40px);
 margin-top: 20px;  }
 
+}
+#box7{
+  button{
+    margin-top: 100px;
+  }
+}
+.rightpanel{
+  margin-top: -1360px;
+  margin-left: 1170px;
+  width: 140px;
+}
+#box8{
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px);
+margin-top: 20px;  }
+button{
+  color: white;
+}
+#antique15{
+  background-image: url(images/img/headscore.png);
+  background-position-x: -70px;
+  button{
+    margin-top: 30px;
+  }
+  p{
+    position: absolute;
+    transform: translateZ(40px);
+    color: blue;
+    span{
+      color: red;
+    }
+  }
+}
+#antique16{
+  background-image: url(images/img/geodash-image.png);
+background-size: cover;
+background-position-x: 10px;
+  button{
+    margin-top: 30px;
+  }
+  p{
+    position: absolute;
+    transform: translateZ(40px);
+    color: rgb(21, 171, 230);
+    
+  }
+}
+#antique17{
+  background-image: url(images/img/leveldevil.png);
+background-size: cover;
+background-position-x: 10px;
+  button{
+    margin-top: 30px;
+  }
+  p{
+    position: absolute;
+    transform: translateZ(40px);
+    color: rgb(230, 122, 21);
+    
+  }
+}
+#antique20{
+  background-image: url(images/img/punchers_16x9-cover.png);
+  background-size: cover;
+  background-position-x: -70px;
+    button{
+      margin-top: 30px;
+    }
+    p{
+      position: absolute;
+      transform: translateZ(40px);
+      color: rgb(24, 21, 230);
+      
+    }
+}
+#antique21{
+  background-image: url(images/img/ragdoll.jpg);
+  background-size: cover;
+  background-position-x: 10px;
+    button{
+      margin-top: 30px;
+    }
+    p{
+      position: absolute;
+      transform: translateZ(40px);
+      color: rgb(24, 21, 230);
+      
+    }
+}
 }
