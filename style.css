@@ -3575,6 +3575,7 @@ background-size: cover;
 background-position-x: 10px;
   button{
     margin-top: 30px;
+    margin-left: 20px;
   }
   p{
     position: absolute;
@@ -3589,6 +3590,7 @@ background-size: cover;
 background-position-x: 10px;
   button{
     margin-top: 30px;
+    margin-left: 20px;
   }
   p{
     position: absolute;
@@ -3625,4 +3627,182 @@ background-position-x: 10px;
       
     }
 }
+}
+.sportjs{
+  #antique16{
+    button{
+      color: white;
+      margin-top: 130px;
+    }
+  }
+  .sportbox2{
+    button{
+      color: white;
+    }
+    #antique15{
+      .new{
+        color: white;
+        width: 70px;
+        height: 25px;
+        background-color: red;
+      font-size: 16px;
+     border-radius: 10px;
+     border-bottom-right-radius: 0.1px;
+     margin-left: 100px;
+     transform: translateZ(40px);
+    margin-top: 20px;  }
+      margin-left: -60px;
+      background-image: url(images/img/headscore.png);
+  background-position-x: -70px;
+  button{
+    margin-top: 30px;
+  }
+  p{
+    position: absolute;
+    transform: translateZ(40px);
+    color: blue;
+    span{
+      color: red;
+    }
+  }
+}
+#antique20{
+  .new{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background-color: red;
+  font-size: 16px;
+ border-radius: 10px;
+ border-bottom-right-radius: 0.1px;
+ margin-left: 100px;
+ transform: translateZ(40px);
+margin-top: 20px;  }
+margin-left: -60px;
+  background-image: url(images/img/punchers_16x9-cover.png);
+  background-size: cover;
+  background-position-x: -70px;
+    button{
+      margin-top: 30px;
+    }
+    p{
+      position: absolute;
+      transform: translateZ(40px);
+      color: rgb(24, 21, 230);
+      
+    }
+}
+    }
+  }
+.twojs{
+  .twoplayerbox1{
+    #antique21{
+      button{
+        margin-top: 130px;
+      }
+    }
+  }
+  .twoplayerbox2{
+    button{
+      color: white;
+
+    }
+    display: flex;
+    margin-top: 30px;
+    #antique15{
+      background-image: url(images/img/headscore.png);
+      background-position-x: -70px;
+      button{
+        margin-top: 30px;
+      }
+      p{
+        position: absolute;
+        transform: translateZ(40px);
+        color: blue;
+        span{
+          color: red;
+        }
+      }
+    }
+    #antique20{
+      margin-left: 40px;
+      background-image: url(images/img/punchers_16x9-cover.png);
+      background-size: cover;
+      background-position-x: -70px;
+        button{
+          margin-top: 30px;
+        }
+        p{
+          position: absolute;
+          transform: translateZ(40px);
+          color: rgb(24, 21, 230);
+          
+        }
+    }
+    #antique21{
+      margin-left: 50px;
+      background-image: url(images/img/ragdoll.jpg);
+      background-size: cover;
+      background-position-x: 0px;
+        button{
+          margin-top: 30px;
+        }
+        p{
+          position: absolute;
+          transform: translateZ(40px);
+          color: rgb(24, 21, 230);
+          
+        }
+    }
+
+
+  }
+}
+.memoryjs{
+  #tictacbtn5{
+    margin-top: 100px;
+  }
+  #antique17{
+    button{
+      margin-top: 120px;
+    }
+  }
+  .memorybox2{
+    display: flex;
+    margin-top: -60px;
+    margin-left: -40px;
+    #antique16{
+      background-image: url(images/img/geodash-image.png);
+    background-size: cover;
+    background-position-x: 10px;
+      button{
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+      p{
+        position: absolute;
+        transform: translateZ(40px);
+        color: rgb(21, 171, 230);
+        
+      }
+    }
+  }
+}
+.survivaljs{
+  button{
+    color: white;
+  }
+  #antique20{
+    button{
+      margin-top: 130px;
+    }
+  }
+  .rightpanel{
+    margin-top: -240px;
+  }
+}.girlsjs{
+  button{
+    margin-top: 130px;
+    color: white;
+  }
 }

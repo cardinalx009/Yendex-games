@@ -1,10 +1,3 @@
-let night=document.querySelector('#night')
-let body2=document.body
-night.addEventListener("click",()=>{
-  body2.classList.toggle("bodycolor");
-    document.body.classList.toggle("show");
-  
-});
 
 let sport=document.getElementById("Sport")
 sport.addEventListener("click", function(){
