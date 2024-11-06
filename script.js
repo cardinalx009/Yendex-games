@@ -36,7 +36,20 @@ fighter.addEventListener("click", function(){
   document.body.classList.toggle("fighterjs");
   
 })
+var color = document.getElementsByClassName("color");
+document.onmousemove = function(){
 
+  //get horizontal and vertical position of mouse
+  var x = event.clientX * 100 / window.innerWidth + "%";
+  var y = event.clientY * 100 / window.innerHeight + "%";
+  
+  for(var i=0; i < 2; i++){
+    color[i].style.left = x;
+    color[i].style.top = y;
+    color[i].style.transform = "translate(-"+x+", -"+y+")";
+  }
+  
+}
 
 
     
