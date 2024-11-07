@@ -1,41 +1,44 @@
 
-let sport=document.getElementById("Sport")
-sport.addEventListener("click", function(){
+// let sport=document.getElementById("Sport")
+// sport.addEventListener("click", function(){
   
- document.getElementById("sport").style.display="block"
- document.body.classList.toggle("sportjs"); 
+//  document.getElementById("sport").style.display="block"
+//  document.body.classList.toggle("sportjs"); 
  
-})
+// })
 
 
-let car=document.getElementById("car")
-car.addEventListener("click", function(){
-  document.body.classList.toggle("carjs");
-})
+// let car=document.getElementById("car")
+// car.addEventListener("click", function(){
+//   document.body.classList.toggle("carjs");
+// })
 
-let two=document.getElementById("two")
-two.addEventListener("click", function(){
-  document.body.classList.toggle("twojs");
-})
-let memory=document.getElementById("memory")
-memory.addEventListener("click", function(){
-  document.body.classList.toggle("memoryjs");
-})
-let survival=document.getElementById("survival")
-survival.addEventListener("click", function(){
-  document.body.classList.toggle("survivaljs");
+// let two=document.getElementById("two")
+// two.addEventListener("click", function(){
+//   document.body.classList.toggle("twojs");
+// })
+// let memory=document.getElementById("memory")
+// memory.addEventListener("click", function(){
+//   document.body.classList.toggle("memoryjs");
+// })
+// let survival=document.getElementById("survival")
+// survival.addEventListener("click", function(){
+//   document.body.classList.toggle("survivaljs");
   
-})
-let girls=document.getElementById("girls")
-girls.addEventListener("click", function(){
-  document.body.classList.toggle("girlsjs");
+// })
+// let girls=document.getElementById("girls")
+// girls.addEventListener("click", function(){
+//   document.body.classList.toggle("girlsjs");
   
-})
-let fighter=document.getElementById("fighter")
-fighter.addEventListener("click", function(){
-  document.body.classList.toggle("fighterjs");
+// })
+// let fighter=document.getElementById("fighter")
+// fighter.addEventListener("click", function(){
+//   document.body.classList.toggle("fighterjs");
   
-})
+// })
+
+
+
 var color = document.getElementsByClassName("color");
 document.onmousemove = function(){
 
@@ -50,69 +53,78 @@ document.onmousemove = function(){
   }
   
 }
+let sliderIndex = 1;
+let timeout;
+const layers = [...document.querySelectorAll('.layer')];
+const covers = [...document.querySelectorAll('.photo-frame')];
 
+function changeCoverAnimState(state = 0) {
+  const st = state === 1 ? 'running' : 'paused';
+  covers.forEach(cover => {
+    // cover.style['animation-play-state'] = st;
+    cover.querySelector('.cover').style.width = `${state * 100}%`;
+  });
+}
+
+function switchLayer(step = 1) {
+  const nextSlide = (sliderIndex + step) % 3 === 0 ? 3 : (sliderIndex + step) % 3;
+  
+  changeCoverAnimState(1);
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    changeCoverAnimState(0)
+  }, 500);
+  
+  for(let i of layers) {
+    i.classList.remove('layer-displayed');
+    i.classList.remove('layer-displayed-exit');
+    if(i.dataset.scene == nextSlide) {
+      i.classList.add('layer-displayed');
+    }
+    if(i.dataset.scene == sliderIndex) {
+      i.classList.add('layer-displayed-exit');
+    }
+  }
+  sliderIndex = nextSlide;
+}
 
     
 	
-
-$(document).on('ready', function() {
+$(function(){
   
-    $('.field').on('focus', function() {
-      $('body').addClass('is-focus');
-    });
+  // set deault arrow position and tab
+  moveArrow();
+  moveTabs($('.tab-panel__header li.tab-active a'));
+  
+  var tab = $('.tab-panel__header a').click(function(e){
+    e.preventDefault();
+    var target = $(this).attr('href');
     
-    $('.field').on('blur', function() {
-      $('body').removeClass('is-focus is-type');
-    });
+    //Remove tab-active class and add to current click tab     
+    $('.tab-panel__header li').removeClass('tab-active');
+    $(this).closest('li').addClass('tab-active');
     
-    $('.field').on('keydown', function(event) {
-      $('body').addClass('is-type');
-      if((event.which === 8) && $(this).val() === '') {
-        $('body').removeClass('is-type');
-      }
-    });
+    //Move Current active tab
+    moveTabs($(this));
+   
+    //Move arrow shape
+    moveArrow();
     
   });
-  let postsData = "";
-const postsContainer = document.querySelector(".posts-container");
-fetch(
-  "https://gist.githubusercontent.com/jemimaabu/564beec0a30dbd7d63a90a153d2bc80b/raw/0b7e25ba0ebee6dbba216cfcfbae72d460a60f26/tutorial-levels"
-).then(async (response) => {
-  postsData = await response.json();
-  postsData.map((post) => createPost(post));
 });
-const createPost = (postData) => {
-  const { title, link, image, categories } = postData;
-  const post = document.createElement("div");
-  post.className = "post";
-  post.innerHTML = ` 
-<a class="post-preview" href="${link}" target="_blank"> 
-<img class="post-image" src="${image}"> 
-</a> 
-<div class="post-content"> 
-<p class="post-title">${title}</p> 
-<div class="post-tags"> 
-${categories
-            .map((category) => {
-              return '<span class="post-tag">' + category + "</span>";
-            })
-            .join("")} 
-</div> 
-</div> 
-`;
-  postsContainer.append(post);
-};
-const search = document.getElementById("search");
-let debounceTimer;
-const debounce = (callback, time) => {
-  window.clearTimeout(debounceTimer);
-  debounceTimer = window.setTimeout(callback, time);
-};
-search.addEventListener(
-  "input",
-  (event) => {
-    const query = event.target.value;
-    debounce(() => handleSearchPosts(query), 500);
-  },
-  false
-);
+
+function moveTabs(target){
+   var total_tabs = target.closest("li").index();
+    $('.tab-panel__content-area').css({
+      'transform':'translateX('+ -(100 * total_tabs) +'%)'
+    });
+}
+
+function moveArrow(){
+  var arrow_size = $('.tab-panel__arrow').outerWidth() / 2;
+    var moving_position = $('.tab-active a').position().left + $('.tab-active   a').innerWidth()/ - arrow_size;
+    $('.tab-panel__arrow').css({
+      'transform':'translateX('+ moving_position +'px)'
+    });
+}
+
