@@ -4420,3 +4420,31 @@ left: 3px;
 .demo-container{
   margin-top: 100px;
 }
+.imges{
+  display: flex;
+  img{
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  #pizzaplay{
+    width: 700px;
+  }
+
+}
+#anime-boy{
+  position: absolute;
+  width: 400px;
+  margin-top: -120px;
+  transform: rotateZ(180deg);
+  transform: rotateY(180deg);
+  margin-left: 1100px;
+}
+footer{
+  margin-top: 100px;
+}
+.ronaldo{
+  width: 100%;
+  text-align: center;
+  margin-left: 100px;
+}
