@@ -4448,3 +4448,51 @@ footer{
   text-align: center;
   margin-left: 100px;
 }
+.selector{
+  width: 1200px;
+  height: 60px;
+  background-color: #3a3f48;
+  margin-top: 300px;
+  margin-left: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #EB73B9;
+    color: white;
+    border-radius: 4px;
+    border: none;
+  }
+}
+#smilling{
+  width: 340px;
+  margin-top: 200px;
+  margin-left: 500px;
+}
+.wrapper{
+  margin-top: 530px;
+  position: absolute;
+margin-left: 645px;
+}
+.newupdate{
+  margin-top: 40px;
+}
+footer{
+  height: 200px;
+  margin-top: 100px;
+  i{
+    font-size:40px;
+    color: white;
+    margin-left: 20px;
+  }
+  p{
+    color: white;
+    font-size: 20px;
+  }
+  flex-direction: column;
+}
