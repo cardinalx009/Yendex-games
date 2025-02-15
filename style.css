@@ -4448,6 +4448,11 @@ footer{
   text-align: center;
   margin-left: 100px;
 }
+<<<<<<< HEAD
+@media screen  {
+  
+}
+=======
 .selector{
   width: 1200px;
   height: 60px;
@@ -4496,3 +4501,4 @@ footer{
   }
   flex-direction: column;
 }
+>>>>>>> b19e02d3d73d5f75d22438d5d79805afc02677b7
